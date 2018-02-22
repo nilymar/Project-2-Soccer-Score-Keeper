@@ -1,0 +1,218 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary theme color of the app  -->
+        <item name="colorPrimary">#0277BD</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#0091EA</item>
+    </style>
+
+    <style name="RegularButtonPortrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:background">@drawable/rounded_corner_blue</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:minWidth">@dimen/team_name_background_portrait</item>
+    </style>
+
+    <style name="RegularButtonLandscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_landscape</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_landscape</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="TeamNamePortrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/team_background</item>
+        <item name="android:minWidth">@dimen/team_name_background_portrait</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_size_teams</item>
+    </style>
+
+    <style name="TeamNameLandscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/team_background</item>
+        <item name="android:minWidth">@dimen/team_name_background_landscape</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_size_teams</item>
+    </style>
+
+    <style name="TeamScorePortrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_score</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TeamScoreLandscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_score</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TableLayoutPortrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/medium_margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/transparent_background</item>
+        <item name="android:paddingLeft">@dimen/small_margin</item>
+        <item name="android:paddingRight">@dimen/small_margin</item>
+        <item name="android:stretchColumns">1</item>
+    </style>
+
+    <style name="TableRowLandscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/layout_margin_landscape</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/transparent_background</item>
+        <item name="android:paddingTop">@dimen/small_margin</item>
+    </style>
+
+    <style name="FoulsTextPortrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/line_spacing</item>
+        <item name="android:paddingLeft">@dimen/small_margin</item>
+        <item name="android:paddingRight">@dimen/small_margin</item>
+        <item name="android:textColor">@color/data_text_color</item>
+        <item name="android:textSize">@dimen/text_size_data</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FoulsTextLandscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/line_spacing</item>
+        <item name="android:paddingLeft">@dimen/small_margin</item>
+        <item name="android:paddingRight">@dimen/small_margin</item>
+        <item name="android:textColor">@color/data_text_color</item>
+        <item name="android:textSize">@dimen/text_size_data_landscape</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DataTextPortrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/line_spacing</item>
+        <item name="android:textColor">@color/data_text_color</item>
+        <item name="android:textSize">@dimen/text_size_data</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">end</item>
+    </style>
+
+    <style name="DataTextLandscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/line_spacing</item>
+        <item name="android:textColor">@color/data_text_color</item>
+        <item name="android:textSize">@dimen/text_size_data_landscape</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="YellowsTextPortrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/line_spacing</item>
+        <item name="android:paddingLeft">@dimen/small_margin</item>
+        <item name="android:paddingRight">@dimen/small_margin</item>
+        <item name="android:textColor">@color/yellow_card_text</item>
+        <item name="android:textSize">@dimen/text_size_data</item>
+        <item name="android:background">@color/yellow_card</item>
+    </style>
+
+    <style name="CardLandscape">
+        <item name="android:layout_width">@dimen/card_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/line_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/line_spacing</item>
+        <item name="android:layout_marginRight">@dimen/line_spacing</item>
+    </style>
+
+    <style name="RedsTextPortrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/line_spacing</item>
+        <item name="android:paddingLeft">@dimen/small_margin</item>
+        <item name="android:paddingRight">@dimen/small_margin</item>
+        <item name="android:textColor">@color/data_text_color</item>
+        <item name="android:textSize">@dimen/text_size_data</item>
+        <item name="android:background">@color/red_card</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonsLayoutPortrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/medium_margin</item>
+        <item name="android:layout_marginRight">@dimen/medium_margin</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MiddleLine">
+        <item name="android:layout_width">@dimen/line_thickness</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+    <style name="ResetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/special_button</item>
+        <item name="android:layout_below">@id/horizontal_layout</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/yellow_card_text</item>
+        <item name="android:textSize">@dimen/text_size_reset_button</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ChangeNameButtonLandscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/horizontal_layout</item>
+        <item name="android:background">@drawable/rounded_corner_change_name</item>
+        <item name="android:layout_margin">@dimen/medium_margin</item>
+        <item name="android:minWidth">@dimen/team_name_background_portrait</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/reset_padding</item>
+        <item name="android:paddingRight">@dimen/reset_padding</item>
+    </style>
+
+    <style name="ChangeNameButtonPortrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_corner_change_name</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:minWidth">@dimen/team_name_background_portrait</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+</resources>

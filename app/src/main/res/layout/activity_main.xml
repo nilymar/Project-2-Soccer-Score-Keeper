@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        tools:context="com.example.android.scorekeeper1.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/background_image_portrait"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic2" />
+
+            <LinearLayout
+                android:id="@+id/horizontal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_spacing"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/team_A_name"
+                        style="@style/TeamNamePortrait"
+                        android:text="@string/team_a"
+                        android:textAlignment="center"
+                        android:textColor="@color/team_a"/>
+
+                    <TextView
+                        android:id="@+id/team_a_score"
+                        style="@style/TeamScorePortrait"
+                        android:fontFamily="monospace"
+                        android:text="@string/zero"
+                        android:textColor="@color/team_a" />
+
+                    <TableLayout
+                        style="@style/TableLayoutPortrait">
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/fouls_a"
+                                style="@style/FoulsTextPortrait"
+                                android:text="@string/fouls" />
+
+                            <TextView
+                                android:id="@+id/team_a_fouls"
+                                style="@style/DataTextPortrait"                                android:layout_marginBottom="@dimen/line_spacing"
+                                android:text="@string/zero"/>
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/yellow_a"
+                                style="@style/YellowsTextPortrait"
+                                android:text="@string/yellows"/>
+
+                            <TextView
+                                android:id="@+id/team_a_yellows"
+                                style="@style/DataTextPortrait"                                android:layout_marginBottom="@dimen/line_spacing"
+                                android:text="@string/zero" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/red_a"
+                                style="@style/RedsTextPortrait"
+                                android:text="@string/reds" />
+
+                            <TextView
+                                android:id="@+id/team_a_reds"
+                                style="@style/DataTextPortrait"                                android:layout_marginBottom="@dimen/line_spacing"
+                                android:text="@string/zero" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <LinearLayout
+                        style="@style/ButtonsLayoutPortrait">
+
+                        <Button
+                            android:id="@+id/add_goal_teamA"
+                            style="@style/RegularButtonPortrait"
+                            android:onClick="addGoalTeamA"
+                            android:text="@string/goal_button" />
+
+                        <Button
+                            android:id="@+id/add_foul_teamA"
+                            style="@style/RegularButtonPortrait"
+                            android:onClick="addFoulsTeamA"
+                            android:text="@string/foul_button" />
+
+                        <Button
+                            android:id="@+id/add_yellowCard_teamA"
+                            style="@style/RegularButtonPortrait"
+                            android:onClick="addYellowsTeamA"
+                            android:text="@string/yellow_card_button" />
+
+                        <Button
+                            android:id="@+id/add_RedCard_teamA"
+                            style="@style/RegularButtonPortrait"
+                            android:onClick="addRedsTeamA"
+                            android:text="@string/red_card_button" />
+
+                        <Button
+                            android:id="@+id/change_teamA_name"
+                            style="@style/ChangeNameButtonPortrait"
+                            android:onClick="changeTeamAName"
+                            android:text="@string/change_team_name"
+                            android:textColor="@color/team_a"/>                        />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/team_B_name"
+                        style="@style/TeamNamePortrait"
+                        android:text="@string/team_b"
+                        android:textAlignment="center"
+                        android:textColor="@color/team_b"/> />
+
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        style="@style/TeamScorePortrait"
+                        android:fontFamily="monospace"
+                        android:text="@string/zero"
+                        android:textColor="@color/team_b" />
+
+                    <TableLayout
+                        style="@style/TableLayoutPortrait">
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/fouls_b"
+                                style="@style/FoulsTextPortrait"
+                                android:text="@string/fouls" />
+
+                            <TextView
+                                android:id="@+id/team_b_fouls"
+                                style="@style/DataTextPortrait"                                android:layout_marginBottom="@dimen/line_spacing"
+                                android:text="@string/zero" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/yellow_b"
+                                style="@style/YellowsTextPortrait"
+                                android:text="@string/yellows" />
+
+                            <TextView
+                                android:id="@+id/team_b_yellows"
+                                style="@style/DataTextPortrait"                                android:layout_marginBottom="@dimen/line_spacing"
+                                android:text="@string/zero" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/red_b"
+                                style="@style/RedsTextPortrait"
+                                android:text="@string/reds" />
+
+                            <TextView
+                                android:id="@+id/team_b_reds"
+                                style="@style/DataTextPortrait"                                android:layout_marginBottom="@dimen/line_spacing"
+                                android:text="@string/zero" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <LinearLayout
+                        style="@style/ButtonsLayoutPortrait">
+
+                        <Button
+                            android:id="@+id/add_goal_teamB"
+                            style="@style/RegularButtonPortrait"
+                            android:onClick="addGoalTeamB"
+                            android:text="@string/goal_button" />
+
+                        <Button
+                            android:id="@+id/add_foul_teamB"
+                            style="@style/RegularButtonPortrait"
+                            android:onClick="addFoulsTeamB"
+                            android:text="@string/foul_button" />
+
+                        <Button
+                            android:id="@+id/add_yellowCard_teamB"
+                            style="@style/RegularButtonPortrait"
+                            android:onClick="addYellowsTeamB"
+                            android:text="@string/yellow_card_button" />
+
+                        <Button
+                            android:id="@+id/add_RedCard_teamB"
+                            style="@style/RegularButtonPortrait"
+                            android:onClick="addRedsTeamB"
+                            android:text="@string/red_card_button" />
+
+                        <Button
+                            android:id="@+id/change_teamB_name"
+                            style="@style/ChangeNameButtonPortrait"
+                            android:onClick="changeTeamBName"
+                            android:text="@string/change_team_name"
+                            android:textColor="@color/team_b" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/MiddleLine"/>
+
+            <Button
+                android:id="@+id/reset_button"
+                style="@style/ResetButton"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:onClick="resetTeamScores"
+                android:text="@string/reset_button" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

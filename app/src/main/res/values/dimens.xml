@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_score">64sp</dimen>
+    <dimen name="text_size_teams">28sp</dimen>
+    <dimen name="text_size_data">20sp</dimen>
+    <dimen name="text_size_data_landscape">18sp</dimen>
+    <dimen name="text_size_reset_button">22sp</dimen>
+    <dimen name="text_size_edit_text">16sp</dimen>
+    <dimen name="text_size_name_change">16sp</dimen>
+    <dimen name="layout_margin_portrait">28dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="button_margin">2dp</dimen>
+    <dimen name="line_spacing">8dp</dimen>
+    <dimen name="line_thickness">5dp</dimen>
+    <dimen name="layout_margin_landscape">6dp</dimen>
+    <dimen name="card_size">12dp</dimen>
+    <dimen name="reset_padding">20dp</dimen>
+    <dimen name="team_name_background_landscape">180dp</dimen>
+    <dimen name="team_name_background_portrait">155dp</dimen>
+    <dimen name="ring_thickness">45dp</dimen>
+    <dimen name="reset_button_space">95dp</dimen>
+    <dimen name="inner_ring_thickness">38dp</dimen>
+</resources>

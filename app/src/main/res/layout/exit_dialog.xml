@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_margin"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/line_spacing"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/line_spacing"
+        android:paddingRight="@dimen/line_spacing"
+        android:paddingTop="@dimen/medium_margin"
+        android:text="@string/exit_dialog_text"
+        android:textColor="@color/line_color"
+        android:textSize="@dimen/text_size_reset_button"
+        android:textStyle="bold" />
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/quit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/line_spacing"
+            android:onClick="addYellowsTeamB"
+            android:text="@string/exit_dialog_save" />
+
+        <Button
+            android:id="@+id/quit_no_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/quit_save"
+            android:layout_margin="@dimen/line_spacing"
+            android:onClick="addYellowsTeamB"
+            android:text="@string/exit_dialog_dont_save" />
+
+    </RelativeLayout>
+
+</LinearLayout>

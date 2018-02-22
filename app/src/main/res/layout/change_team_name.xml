@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_margin"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/line_spacing"
+        android:paddingLeft="@dimen/line_spacing"
+        android:paddingRight="@dimen/line_spacing"
+        android:paddingTop="@dimen/medium_margin"
+        android:text="@string/chage_team_name_title"
+        android:textColor="@color/line_color"
+        android:textSize="@dimen/text_size_reset_button"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:paddingLeft="@dimen/line_spacing"
+        android:paddingRight="@dimen/line_spacing"
+        android:paddingTop="@dimen/small_margin"
+        android:text="@string/edit_text_char_limit"
+        android:textSize="@dimen/text_size_edit_text" />
+
+    <EditText
+        android:id="@+id/user_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/change_team_name_hint"
+        android:inputType="text"
+        android:maxLength="8"
+        android:paddingBottom="@dimen/line_spacing"
+        android:paddingLeft="@dimen/line_spacing"
+        android:textSize="@dimen/text_size_edit_text">
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/layout_margin_landscape"
+            android:onClick="addYellowsTeamB"
+            android:text="@string/ok_button" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/layout_margin_landscape"
+            android:onClick="addYellowsTeamB"
+            android:text="@string/cancel_button" />
+
+    </RelativeLayout>
+
+</LinearLayout>
